@@ -1,0 +1,32 @@
+.card > img {
+  height: 170px;
+  width: 170px;
+  border-radius: 16px;
+}
+
+.card {
+  padding: 5px 15px 5px 15px;
+  border-radius: 16px;
+  font-family: "Underdog";
+  background-color: #edf2f499;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.card,
+.card:focus {
+  animation: rot 1s alternate;
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+  100% {
+    transform: rotate3d(0, 0, 0, 0);
+  }
+}

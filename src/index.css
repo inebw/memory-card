@@ -5,9 +5,11 @@
 }
 
 body {
+  box-sizing: border-box;
   height: 100vh;
   background: center/cover no-repeat url("./assets/background.jpg");
+  background-color: #00000099;
+  background-blend-mode: darken;
   display: flex;
   justify-content: center;
-  padding: 5px;
 }
