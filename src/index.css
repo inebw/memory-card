@@ -1,0 +1,13 @@
+* {
+  margin: 0px;
+  border: 0px;
+  background: none;
+}
+
+body {
+  height: 100vh;
+  background: center/cover no-repeat url("./assets/background.jpg");
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}

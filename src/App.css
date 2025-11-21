@@ -1,0 +1,13 @@
+.app {
+  max-width: 900px;
+}
+
+.logo {
+  font-family: "Rubik Iso";
+  font-size: 3rem;
+  color: #f5cb5c;
+  background-color: #46494ce0;
+  border-radius: 16px;
+  padding: 5px 20px 5px 20px;
+  margin: 10px;
+}
