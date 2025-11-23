@@ -3,7 +3,6 @@ import getRandomArr from "./get-random-arr";
 import randomizeArray from "./randomizeArr";
 import { useState, useEffect } from "react";
 import Card from "./card";
-import HasWon from "./has-won";
 
 export default function GameBoard({ changeWonStatus }) {
   const [data, setData] = useState(null);
@@ -59,6 +58,7 @@ export default function GameBoard({ changeWonStatus }) {
       setScore(score + 1);
       setSelected(newSet);
       const newData = randomizeArray(data);
+      setData(null)
       setData(newData);
     }
   }
