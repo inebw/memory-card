@@ -17,7 +17,7 @@
   transform: scale(1.1);
 }
 
-.card {
+ .card {
   animation: rot 1s ease-in-out;
 }
 
