@@ -1,15 +1,19 @@
 .card > img {
   height: 170px;
   width: 170px;
-  border-radius: 16px;
+  border-radius: 8px;
 }
 
 .card {
   padding: 5px 15px 5px 15px;
-  border-radius: 16px;
+  border-radius: 8px;
   font-family: "Underdog";
   background-color: #edf2f499;
   transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .card:hover {
@@ -17,8 +21,20 @@
   transform: scale(1.1);
 }
 
- .card {
+.card {
   animation: rot 1s ease-in-out;
+}
+
+@media (max-width: 620px) {
+  .card > img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .card {
+    padding: 2px;
+    font-size: 0.5rem;
+  }
 }
 
 @keyframes rot {

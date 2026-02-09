@@ -17,9 +17,9 @@ export default function GameBoard({
   return (
     <div className="game-board">
       <div className="score-card">
-        <h2>Score: {score}</h2>
-        <h2>Remaining: {12 - score}</h2>
-        <h2>High Score: {highScore}</h2>
+        <h2 className="current-score">Score: {score}</h2>
+        <h2 className="remaining-score">Remaining: {12 - score}</h2>
+        <h2 className="high-score">High Score: {highScore}</h2>
       </div>
       <div className="cards">
         {data &&

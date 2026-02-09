@@ -6,7 +6,7 @@
 
 body {
   box-sizing: border-box;
-  height: 100vh;
+  height: 100dvh;
   background: center/cover no-repeat url("./assets/background.jpg");
   background-color: #00000099;
   background-blend-mode: darken;

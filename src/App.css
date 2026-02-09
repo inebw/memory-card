@@ -2,17 +2,37 @@
   max-width: 900px;
 }
 
-.score-card,
+.current-score,
+.high-score,
+.remaining-score,
 .logo {
   font-family: "Rubik Iso";
   color: #353535;
   background-color: #edf2f499;
   box-shadow: 0px 0px 4px #edf2f4;
-  border-radius: 16px;
+  border-radius: 8px;
   padding: 5px 20px 5px 20px;
   margin: 10px;
 }
 
 .logo {
   font-size: 3rem;
+}
+
+@media (max-width: 620px) {
+  .app {
+    margin-top: 10px;
+  }
+
+  .current-score,
+  .high-score,
+  .remaining-score,
+  .logo {
+    padding: 2px;
+    margin: 2px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
 }
