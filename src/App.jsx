@@ -11,6 +11,7 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [score, setScore] = useState(0);
+  const [highScore, setHighScore] = useState(0);
   const [dataVersion, setDataVersion] = useState(0);
   const [selected, setSelected] = useState(new Set());
 
@@ -46,7 +47,7 @@ function App() {
 
   function handleClick(e) {
     let currId = 0;
-    setDataVersion(prevData => prevData + 1)
+    setDataVersion((prevData) => prevData + 1);
     if (e.target.id) currId = e.target.id;
     else currId = e.target.parentElement.id;
     if (selected.has(currId)) {
@@ -69,10 +70,7 @@ function App() {
     <div className="app">
       <h1 className="logo">Rick and Morty Memory Game</h1>
       {hasWon ? (
-        <HasWon
-          changeWonStatus={changeWonStatus}
-
-        />
+        <HasWon changeWonStatus={changeWonStatus} />
       ) : (
         data && (
           <GameBoard
@@ -81,6 +79,8 @@ function App() {
             handleClick={handleClick}
             score={score}
             data={data}
+            highScore={highScore}
+            setHighScore={setHighScore}
           />
         )
       )}
@@ -89,5 +89,3 @@ function App() {
 }
 
 export default App;
-
-

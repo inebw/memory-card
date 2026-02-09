@@ -1,6 +1,4 @@
 import "./../styles/game-board.css";
-
-import { useState, useEffect } from "react";
 import Card from "./card";
 
 export default function GameBoard({
@@ -8,9 +6,9 @@ export default function GameBoard({
   handleClick,
   score,
   data,
+  highScore,
+  setHighScore,
 }) {
-  const [highScore, setHighScore] = useState(0);
-
   if (score > highScore) setHighScore(score);
   if (score == 12) changeWonStatus();
 
